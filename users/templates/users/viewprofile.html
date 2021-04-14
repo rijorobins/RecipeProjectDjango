@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'users/base.html' %}
+{% block body_block%}
+
+<div class="container">
+    <div class="col-4"></div>
+    <div class="col-4">
+
+  <img src="{{user.profile_pic.url}}" class="card-img-top" alt="..."><!--displays image-->
+
+        <ul><li>{{user.user}}</li><!--displays username-->
+            <li>{{user.birth_date}}</li>
+            <li>{{user.bio}}</li></ul>
+    </div>
+</div>
+</div>
+    <div class="col-4"></div>
+
+    </div>
+
+{%endblock%}
